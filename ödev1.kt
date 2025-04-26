@@ -1,7 +1,7 @@
 fun main() {
     var sehir = "Sivas"
     val ülke = "Türkiye"
-    var telefon = "05555555555" // String yaptık
+    var telefon = "05555555555" 
     var posta_kodu = 58
     var e_mail = "elif@gmail.com"
     var meslek = "Bilgisayar Mühendisi"
@@ -46,7 +46,6 @@ fun main() {
     val kupon_kodu = "EIO392JK"
     var fatura_adresi = "kamelya sokak no:3"
 
-    // Hepsini ekrana yazdırıyoruz
     println("Şehir: $sehir")
     println("Ülke: $ülke")
     println("Telefon: $telefon")
