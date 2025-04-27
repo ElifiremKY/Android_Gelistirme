@@ -1,18 +1,16 @@
-fun maasHesapla(gunSayisi: Int): Int {
-    val calismaSaati = gunSayisi * 8
-    return if (calismaSaati <= 160) {
-        calismaSaati * 10
+fun kotaUcretiHesapla(kota: Int): Int {
+    return if (kota <= 50) {
+        100
     } else {
-        val normalSaat = 160
-        val mesaiSaat = calismaSaati - 160
-        (normalSaat * 10) + (mesaiSaat * 20)
+        val ekstraGb = kota - 50
+        100 + (ekstraGb * 4)
     }
 }
 
 fun main() {
-    println("Çalışılan gün sayısını girin:")
-    val gunSayisi = readLine()!!.toInt()
+    println("Kullanılan kota miktarını (GB) girin:")
+    val kota = readLine()!!.toInt()
 
-    val maas = maasHesapla(gunSayisi)
-    println("Toplam maaş: $maas ₺")
+    val ucret = kotaUcretiHesapla(kota)
+    println("Toplam ücret: $ucret ₺")
 }
